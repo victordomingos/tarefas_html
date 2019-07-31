@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Texto pré-formatado</title>
+</head>
+<body>
+	<h1>Texto pré-formatado</h1>
+	<pre>
+		# Only save the converted file if conversion did save any space
+        final_size = os.path.getsize(conv_file_path)
+        if t.no_size_comparison or (orig_size - final_size > 0):
+            was_optimized = True
+            if t.force_del:
+                try:
+                    os.remove(t.src_path)
+                except OSError as e:
+                    msg = "Error while replacing original PNG with the " \
+                          "new JPEG version."
+                    print(f"\n{msg}\n{e}\n")
+        else:
+            final_size = orig_size
+            was_optimized = False
+            try:
+                os.remove(conv_file_path)
+            except OSError as e:
+                msg = "Error while removing temporary JPEG converted file."
+                print(f"\n{msg}\n{e}\n")
+
+        result_format = "JPEG"
+        return TaskResult(t.src_path, orig_format, result_format,
+                          orig_mode, img.mode, orig_colors, final_colors,
+                          orig_size, final_size, was_optimized,
+                          was_downsized, had_exif, has_exif)
+
+
+
+	</pre>
+
+</body>
+</html>
