@@ -3,7 +3,7 @@
 */
  
 /*
--- Padrıes e Reset
+-- Padr√µes e Reset
 */
  
 h1, h2, h3, h4, h5, h6 {
@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 body {
 	color: #333;
+	background: #FFF url(../images/fundo_site.jpg);	
 }
 
 body, input, select, textarea {
@@ -53,6 +54,21 @@ p {
 	line-height: 1.4em;
 }
 
+.conteudo-principal {
+	display: inline-block;
+	max-width: 640px;
+	float: left;
+}
+
+.conteudo-secundario {
+	display: inline-block;
+	max-width: 250px;
+	min-width: 180px;
+	float: right;
+	background-color: #33C0FF;
+	
+}
+
 .conteudo-principal h1,
 .conteudo-principal h2,
 .conteudo-secundario h3 {
@@ -66,7 +82,7 @@ p {
 
 .conteudo-principal h2 {
 	font-size: 24px;
-}
+	}
 
 .conteudo-secundario h3 {
 	font-size: 18px;
@@ -74,6 +90,16 @@ p {
 
 .conteudo-secundario p {
 	font-size: 14px;
+	
+}
+
+.conteudo-secundario img {
+	width: 100%;
+}
+
+.conteudo-secundario .interna {
+	background-color: #EEEEEE;
+
 }
 
 
@@ -89,19 +115,48 @@ p {
 	margin-bottom: 0.3em;
 }
 
+#menu-principal li {
+	display: inline;
+}
+
+#hero_banner {
+	height: 200px;
+	background: #b6b6b6 url(../images/foto_principal.jpg);
+}
 
 
+.legenda {
+	width: 100%;
+	margin: 20px;
+	background-color: none;
+}
 
 /*
 -- Estrutura
 */
  
+ #cabecalho, #conteudo, #rodape, #hero_banner {
+ 	display: block;
+ 	width: 900px;
+	margin: 0 auto;
+
+ }
+
+ #rodape {
+ 	clear: both;
+ 	background-color: #DDDDDD;
+ 	margin-top: 20;
+ 	margin-bottom: 0;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
 /*
--- Estilos especÌficos de SeÁ„o
+-- Estilos espec√≠ficos de Se√ß√£o
 */
  
 /*
--- Formul·rios
+-- Formul√°rios
 */
  
 /*
