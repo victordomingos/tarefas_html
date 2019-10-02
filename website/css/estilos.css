@@ -6,10 +6,92 @@
 -- Padrões e Reset
 */
  
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+
+
 /*
 -- Tipografia e Cores
 */
- 
+body {
+	color: #333;
+}
+
+body, input, select, textarea {
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans",
+"DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana,
+"Verdana Ref", sans-serif;
+}
+
+a:link {
+	color: #0F599F;
+} 
+
+a:visited {
+	color: #666;
+} 
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+} 
+
+a:focus {
+	outline: 1px dotted #F00;
+} 
+
+a:active {
+	color: #F00;
+}
+
+
+p {
+	font-size: 16px;
+	margin-bottom: 1.5em;
+	line-height: 1.4em;
+}
+
+.conteudo-principal h1,
+.conteudo-principal h2,
+.conteudo-secundario h3 {
+	margin-bottom: 0.5em;
+}
+
+.conteudo-principal h1 {
+	font-size: 36px;
+	
+}
+
+.conteudo-principal h2 {
+	font-size: 24px;
+}
+
+.conteudo-secundario h3 {
+	font-size: 18px;
+}
+
+.conteudo-secundario p {
+	font-size: 14px;
+}
+
+
+.conteudo-principal ul,
+.conteudo-principal ol {
+	font-size: 16px;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+	list-style-type: square;
+}
+
+.conteudo-principal li {
+	margin-bottom: 0.3em;
+}
+
+
+
+
 /*
 -- Estrutura
 */
