@@ -38,40 +38,42 @@
 				<form>
 					<fieldset id="identificacao">
 						<legend>Identificação</legend>
-						Nome:
-						Email:
-						
-						Sexo:
-							- masculino
-							- feminino
+						<p>Nome: 				<input type="text" name="txt_nome" id="c_nome" SIZE=80 maxlength=128 placeholder="Escreva o nome"></p>
+						<p>Email: 				<input type="email" name="txt_email" id="c_email" size=30 maxlength=50 placeholder="address@mailprovider.com">
+						Palavra-passe: 		<input type="password" name="txt_password" id="c_password" size=30 maxlength=40 placeholder="Escreva o password"></p>
 
-						data de nascimento:
+						<fieldset id="sexo">
+						<legend>Sexo:</legend>
+							<input type="radio" name="radio_sexo" id="c_masc"> 		<label for="c_masc">Masculino</label>
+							<input type="radio" name="radio_sexo" id="c_fem"> 		<label for="c_fem">Feminino</label>
+							<input type="radio" name="radio_sexo" id="c_outro"> 	<label for="c_outro">Outro</label>
+						</fieldset>
+
+						<p>Data de nascimento: <input type="date" name="dt_date" id="cdate">
 					</fieldset>
 
 
 					<fieldset id="endereco">
 						<legend>Endereço</legend>
-						- Rua
-						- Número
-						- Freguesia
-						- Cidade
+						<p>Rua:  <input type="text" name="txt_rua" id="c_rua" size=80 maxlength=100 placeholder="Escreva a rua"> Número: <input type="number" min=0 max=99999 name="txt_numero" id="c_numero" size=30 maxlength=40 placeholder="Escreva o numero"><br>
+						Freguesia:  <input type="text" name="txt_freguesia" id="c_freguesia" size=30 maxlength=40 placeholder="Freguesia"> Cidade: <input type="text" name="txt_cidade" id="c_cidade" size=30 maxlength=40 placeholder="Cidade">
 					</fieldset>
 
 
 					<fieldset id="mensagem">
 						<legend>Mensagem</legend>
-						- grau de urgencia:
-						- Mensagem:
+						<label for=c_urgencia>Grau de urgência:</label>
+						<p>Mensagem:  <input type="text" name="txt_msg" id="c_msg" size=30 maxlength=40 placeholder="Escreva aqui a sua mensagem.">
 					</fieldset>
 
 					</fieldset id="informacao">
 						<legend>Gostaria de receber mais informações sobre o produto?</legend>
-						- Cor
-						- Quantidade
-						- Preço
+						<label for="c_cor">Cor</label>
+						<label for="c_qtd">Quantidade</label>
+						<label for="c_preco">Preço</label>
 					</fieldset>
 
-					[Botão enviar]
+					<input type="submit" name="btn_submit" id="c_submit" value="Enviar mensagem">
 				</form>
 
 
