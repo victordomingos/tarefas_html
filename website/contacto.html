@@ -56,7 +56,46 @@
 					<fieldset id="endereco">
 						<legend>Endereço</legend>
 						<p>Rua:  <input type="text" name="txt_rua" id="c_rua" size=80 maxlength=100 placeholder="Escreva a rua"> Número: <input type="number" min=0 max=99999 name="txt_numero" id="c_numero" size=30 maxlength=40 placeholder="Escreva o numero"><br>
-						Freguesia:  <input type="text" name="txt_freguesia" id="c_freguesia" size=30 maxlength=40 placeholder="Freguesia"> Cidade: <input type="text" name="txt_cidade" id="c_cidade" size=30 maxlength=40 placeholder="Cidade">
+						Freguesia:  <input type="text" name="txt_freguesia" id="c_freguesia" size=30 maxlength=40 placeholder="Freguesia"> 
+						<label for="c_cidade">Cidade A:</label>
+						<select name=t_cidade id=c_cidade>
+							<optgroup label="Norte">
+								<option value="braga">Braga</option>
+								<option value="porto">Porto</option>
+								<option value="Lombadinha">Lombadinha</option>
+							</optgroup>
+							
+							<optgroup label="Centro/Sul">
+								<option value="braga">Lisboa</option>
+								<option value="porto">Sarilhos Pequenos</option>
+							</optgroup>
+						</select>
+
+
+						<label for="c_cidadeb">Cidade B:</label>
+						<input type="text" name="cidade_b" id="c_cidadeb" list="cidadesb" placeholder="Cidade" maxlength="40" size="20">
+							<datalist id="cidadesb">
+								<option value="braga">Portugal</option>
+								<option value="porto"></option>
+								<option value="Lombadinha">AVV</option>
+								<option value="Lisboa"></option>
+								<option value="Sarilhos Pequenos"></option>
+							</datalist>
+
+
+
+
+							<p><label for="cCidd">Cidade2:</label>
+						<input type="text" name="tCidd" id="cCidd" maxlength="40" size="20" placeholder="Cidade" list="cidades"/></p>
+							<datalist id="cidades">
+								<option value="Braga">Portugal</option>
+								<option value="Porto"></option>
+								<option value="Lisboa"></option>
+								<option value="Coimbra"></option>
+								<option value="Viana do castelo"></option>
+								<option value="Barcelos"></option>
+							</datalist>	
+						
 					</fieldset>
 
 
