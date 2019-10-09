@@ -4,6 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Serviços - Linda Empresa</title>
 	<link href="css/estilos.css" type="text/css" rel="stylesheet">
+
+
+<script type="text/javascript">
+	function calc_total(){
+		var qtd = parseInt(document.getElementById('c_qtd').value);
+		var total = qtd * 150;
+		document.getElementById('c_total').value = total;
+	}
+</script>
+
 </head>
 <body>
 
@@ -100,16 +110,37 @@
 
 
 					<fieldset id="mensagem">
+
 						<legend>Mensagem</legend>
 						<label for=c_urgencia>Grau de urgência:</label>
-						<p>Mensagem:  <input type="text" name="txt_msg" id="c_msg" size=30 maxlength=40 placeholder="Escreva aqui a sua mensagem.">
+							<p>Mín. <input type="range" name="t_grau" min=0, max=10, step=2> Máx.</p>
+						<p>
+							<label for="c_msg">Mensagem:</label><br>
+
+							<textarea cols=45 rows=6 maxlength=40 name="txt_msg" id="c_msg" placeholder="Escreva aqui a sua mensagem."></textarea>
+						</p>
+						
 					</fieldset>
 
 					</fieldset id="informacao">
 						<legend>Gostaria de receber mais informações sobre o produto?</legend>
-						<label for="c_cor">Cor</label>
-						<label for="c_qtd">Quantidade</label>
-						<label for="c_preco">Preço</label>
+						<p><input type="checkbox" name="t_info" id="c_id" checked><label for="c_id">Quero receber mais informações.</label></p>
+						
+						<p>
+							<label for="c_cor">Cor</label>
+							<input type="color" name="t_cor" id="c_cor" value="#0000FF">
+						</p>
+
+						<p>
+							<label for="c_qtd">Quantidade</label>
+							<input type="number" name="t_qtd" id="c_qtd" value="0" oninput="calc_total()">
+						</p>
+						
+						<p>
+							<label for="c_total">Preço</label>
+							<input type="text" name="t_total" id="c_total" placeholder="Total">
+						</p>
+						
 					</fieldset>
 
 					<input type="submit" name="btn_submit" id="c_submit" value="Enviar mensagem">
